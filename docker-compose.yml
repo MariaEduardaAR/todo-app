@@ -1,0 +1,10 @@
+services:
+
+  app:
+    build: .
+    container_name: todo-app
+    ports:
+      - "80:80"
+
+    env_file:
+      - .env
